@@ -14,13 +14,15 @@ class InsurancePredictApp extends StatelessWidget {
   // emulator (uses 10.0.2.2) and on iOS/macOS (uses localhost / 127.0.0.1).
   // If you deploy the FastAPI service, replace with the public URL.
   static String get apiBaseUrl {
-    if (kIsWeb) return 'http://127.0.0.1:8000';
+    if (kIsWeb) return 'https://linear-regression-model-wng5.onrender.com';
     try {
-      if (Platform.isAndroid) return 'http://10.0.2.2:8000';
+      if (Platform.isAndroid) {
+        return 'https://linear-regression-model-wng5.onrender.com';
+      }
     } catch (_) {
       // Platform may throw on some targets; fallthrough to localhost
     }
-    return 'http://127.0.0.1:8000';
+    return 'https://linear-regression-model-wng5.onrender.com';
   }
 
   @override
