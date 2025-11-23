@@ -177,7 +177,7 @@ POST /predict
 
 
 
-# **You're All Set**
+# *✅You're All Set*
 
 # **Author**
 Milka Keza ISINGIZWE
